@@ -113,7 +113,7 @@ export function Collections () {
 function Collection ({ title, numberOfItems, img1, alt1, img2, alt2, img3, alt3, img4, alt4}) {
   return (
     <div
-            className="grid-rows-layout h-30 mx-3 mb-5 grid grid-cols-2 gap-1 rounded-md border border-solid border-[#dedede] sm:mx-0 sm:h-full sm:w-full">
+            className="grid-rows-layout overflow-hidden h-auto mx-3 mb-5 grid grid-cols-2 gap-1 rounded-md border border-solid border-[#dedede] sm:mx-0 sm:w-full">
             <div className="flex items-center">
               <h5 className="self-center whitespace-nowrap py-3 pl-4">
                 {title}
@@ -123,10 +123,10 @@ function Collection ({ title, numberOfItems, img1, alt1, img2, alt2, img3, alt3,
             <p className="self-center justify-self-end pr-4 text-[13px] text-text-secondary">
               {numberOfItems}
             </p>
-            <img className="h-full w-full object-cover" src={img1} alt={alt1} />
-            <img className="h-full w-full object-cover" src={img2} alt={alt2} />
-            <img className="h-full w-full object-cover" src={img3} alt={alt3} />
-            <img className="h-full w-full object-cover" src={img4} alt={alt4} />
+            <img className="h-[25vh] lg:h-[18vh] w-full object-cover" src={img1} alt={alt1} />
+            <img className="h-[25vh] lg:h-[18vh] w-full object-cover" src={img2} alt={alt2} />
+            <img className="h-[25vh] lg:h-[18vh] w-full object-cover" src={img3} alt={alt3} />
+            <img className="h-[25vh] lg:h-[18vh] w-full object-cover" src={img4} alt={alt4} />
     </div>
   );
 }
@@ -180,10 +180,6 @@ export function Blogs () {
        imgUrl="./assets/imgs/flower6.jpg" alt="filler" subtitle="filler" title="filler"
        description="filler">
        </Blog>
-       <Blog
-       imgUrl="./assets/imgs/flower6.jpg" alt="filler" subtitle="filler" title="filler"
-       description="filler">
-       </Blog>
     </div>
   )
 }
@@ -191,7 +187,7 @@ export function Blogs () {
 function Blog ({ imgUrl, alt, subtitle, title, description}) {
   return (
     <div className="flex h-40 overflow-hidden rounded-md border border-[#dedede] sm:h-auto sm:flex-col">
-            <img className="h-full w-full object-cover" src={imgUrl} alt={alt} />
+            <img className="h-[40vh] w-[33vw] object-cover" src={imgUrl} alt={alt} />
             <div className="flex flex-col justify-center px-4">
               <p className="pt-3 text-left text-[13px] text-text-secondary">
                 {subtitle}
