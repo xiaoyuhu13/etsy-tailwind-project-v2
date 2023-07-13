@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+#Assets - due to my computer automatically uploading them to icloud 
+#thus making them unavalible
+assets
