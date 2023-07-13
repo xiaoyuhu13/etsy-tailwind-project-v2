@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply font-serif text-4xl font-light;
+  }
+  h2 {
+    @apply font-serif text-[2rem] font-light md:text-[44px];
+  }
+
+  h3 {
+    @apply font-sans text-[1.75rem];
+  }
+  h4 {
+    @apply font-sans text-xl font-medium lg:text-[28px];
+  }
+  h5 {
+    @apply font-sans text-base font-medium;
+  }
+  base {
+    @apply font-sans text-base;
+  }
+}
+
+@layer utilities {
+  .sale {
+    text-decoration: line-through;
+    font-weight: 400;
+  }
+  .fd-ellipsis {
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin: 1rem;
+  }
+
+  .blog-ellipsis {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
