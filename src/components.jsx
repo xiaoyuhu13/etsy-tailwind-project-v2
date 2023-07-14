@@ -169,16 +169,28 @@ export function Blogs () {
   return (
     <div className="mx-[calc(8px+2.5625vw)] mt-4 grid gap-2 sm:flex sm:gap-4">
        <Blog
-       imgUrl="./assets/imgs/flower6.jpg" alt="filler" subtitle="filler" title="filler"
-       description="filler">
+       imgUrl="./assets/imgs/flower6.jpg" alt="Shopping Guides"
+       subtitle="Shopping Guides"
+       title="Martha Stewart's Father's Day Curated Collection"
+       description="Call off your search! Just in time for Dad’s big day, the lifestyle
+          icon shares her favorite foolproof present picks from small shops on
+          Etsy.">
        </Blog>
        <Blog
-       imgUrl="./assets/imgs/flower6.jpg" alt="filler" subtitle="filler" title="filler"
-       description="filler">
+       imgUrl="./assets/imgs/flower6.jpg" alt="Shopping Guides"
+       subtitle="Shopping Guides"
+       title="Martha Stewart's Father's Day Curated Collection"
+       description="Call off your search! Just in time for Dad’s big day, the lifestyle
+          icon shares her favorite foolproof present picks from small shops on
+          Etsy.">
        </Blog>
        <Blog
-       imgUrl="./assets/imgs/flower6.jpg" alt="filler" subtitle="filler" title="filler"
-       description="filler">
+       imgUrl="./assets/imgs/flower6.jpg" alt="Shopping Guides"
+       subtitle="Shopping Guides"
+       title="Martha Stewart's Father's Day Curated Collection"
+       description="Call off your search! Just in time for Dad’s big day, the lifestyle
+          icon shares her favorite foolproof present picks from small shops on
+          Etsy.">
        </Blog>
     </div>
   )
@@ -195,7 +207,7 @@ function Blog ({ imgUrl, alt, subtitle, title, description}) {
               <h5 className="py-4 text-left">
                 {title}
               </h5>
-              <p className="blog-ellipsis invisible absolute pb-4 text-[13px] text-text-secondary sm:visible sm:relative">
+              <p className="blog-ellipsis invisible absolute mb-4 text-[13px] text-text-secondary sm:visible sm:relative">
                 {description}
               </p>
             </div>
