@@ -46,7 +46,7 @@ export function RecentlyViewedItems () {
 function RecentlyViewedItemVisible ({ imgUrl, price}) {
   return (
      <div className="relative">
-            <img className="relative z-0 h-[7.5rem] w-full object-cover sm:h-[10rem] sm:rounded-sm"
+            <img className="relative z-0 h-[7.5rem] w-full object-cover sm:h-[10rem] sm:rounded-sm hover:drop-shadow-md"
               src={imgUrl} alt="pink flowers in white vase" />
             <div className="absolute bottom-0 z-10 mb-1 ml-1 w-fit rounded-lg border border-solid border-[#dedede] bg-white">
               <p className="w-fit px-2 py-0.5 text-[13px] font-bold">{price}</p>
