@@ -30,28 +30,28 @@ function Category({ imgUrl, altText, label }) {
 export function RecentlyViewedItems () {
   return (
     <div className="grid grid-cols-2 gap-1 sm:mx-[calc(8px+2.5625vw)] sm:grid-cols-4 sm:gap-3 lg:grid-cols-5">
-          <RecentlyViewedItemVisible imgUrl="./assets/imgs/flower2.jpg" price="2.50"></RecentlyViewedItemVisible>
-          <RecentlyViewedItemVisible imgUrl="./assets/imgs/flower2.jpg" price="1.50"></RecentlyViewedItemVisible>
-          <RecentlyViewedItemVisible imgUrl="./assets/imgs/flower2.jpg" price="1.50"></RecentlyViewedItemVisible>
-          <RecentlyViewedItemVisible imgUrl="./assets/imgs/flower2.jpg" price="1.50"></RecentlyViewedItemVisible>
-          <RecentlyViewedItemVisible imgUrl="./assets/imgs/flower2.jpg" price="1.50"></RecentlyViewedItemVisible>
-          <RecentlyViewedItemVisible imgUrl="./assets/imgs/flower2.jpg" price="1.50"></RecentlyViewedItemVisible>
-          <RecentlyViewedItemVisible imgUrl="./assets/imgs/flower2.jpg" price="1.50"></RecentlyViewedItemVisible>
-          <RecentlyViewedItemVisible imgUrl="./assets/imgs/flower2.jpg" price="1.50"></RecentlyViewedItemVisible>
-          <RecentlyViewedItemInvisible imgUrl="./assets/imgs/flower2.jpg" price="1.50"></RecentlyViewedItemInvisible>
-          <RecentlyViewedItemInvisible imgUrl="./assets/imgs/flower2.jpg" price="1.50"></RecentlyViewedItemInvisible>
+          <RecentlyViewedItemVisible imgUrl="./assets/imgs/flower18.jpg" alt="white flowers" price="2.50"></RecentlyViewedItemVisible>
+          <RecentlyViewedItemVisible imgUrl="./assets/imgs/flower17.jpg" alt="small colorful flowers" price="1.50"></RecentlyViewedItemVisible>
+          <RecentlyViewedItemVisible imgUrl="./assets/imgs/flower16.jpg" alt="yellow tulips" price="1.50"></RecentlyViewedItemVisible>
+          <RecentlyViewedItemVisible imgUrl="./assets/imgs/flower15.jpg" alt="red and yellow roses" price="1.50"></RecentlyViewedItemVisible>
+          <RecentlyViewedItemVisible imgUrl="./assets/imgs/flower14.jpg" alt="pik and white flowers" price="1.50"></RecentlyViewedItemVisible>
+          <RecentlyViewedItemVisible imgUrl="./assets/imgs/flower13.jpg" alt="pink cherry blossoms" price="1.50"></RecentlyViewedItemVisible>
+          <RecentlyViewedItemVisible imgUrl="./assets/imgs/flower12.jpg" alt="pink flowers" price="1.50"></RecentlyViewedItemVisible>
+          <RecentlyViewedItemVisible imgUrl="./assets/imgs/flower11.jpg" alt="yellow sunflowers" price="1.50"></RecentlyViewedItemVisible>
+          <RecentlyViewedItemInvisible imgUrl="./assets/imgs/flower10.jpg" alt="pinke wildflowers" price="1.50"></RecentlyViewedItemInvisible>
+          <RecentlyViewedItemInvisible imgUrl="./assets/imgs/flower9.jpg" alt="redt and white tulips" price="1.50"></RecentlyViewedItemInvisible>
     </div>
   );
 }
 
-function RecentlyViewedItemVisible ({ imgUrl, price}) {
+function RecentlyViewedItemVisible ({ imgUrl, price, alt}) {
   return (
      <div className="group relative">
             <div className="absolute top-2 right-2 z-10 px-2 py-[9px] bg-white rounded-full border border-solid border-[#dedede] invisible group-hover:visible">
               <img className="h-4" src="./assets/icons/heart.png" alt="heart icon"/>
             </div>
             <img className="relative z-0 h-[7.5rem] w-full object-cover sm:h-[10rem] sm:rounded-sm hover:shadow-md"
-              src={imgUrl} alt="pink flowers in white vase" />
+              src={imgUrl} alt={alt} />
             <div className="absolute bottom-0 z-10 mb-1 ml-1 w-fit rounded-lg border border-solid border-[#dedede] bg-white">
               <p className="w-fit px-2 py-0.5 text-[13px] font-bold">{price}</p>
             </div>
@@ -77,15 +77,28 @@ function RecentlyViewedItemInvisible ({ imgUrl, price }) {
 export function RecentlyViewedCategories () {
   return (
     <div
-          className="z-10 mx-[calc(8px+10.5625vw)] mb-6 mt-12 grid grid-cols-4 gap-6 lg:mx-[calc(8px+10.5625vw)] lg:grid-cols-6">
-        <Category imgUrl="./assets/imgs/gift1.jpg" altText="filler" label="filler"></Category>
-        <Category imgUrl="./assets/imgs/gift1.jpg" altText="filler" label="filler"></Category>
-        <Category imgUrl="./assets/imgs/gift1.jpg" altText="filler" label="filler"></Category>
-        <Category imgUrl="./assets/imgs/gift1.jpg" altText="filler" label="filler"></Category>
-        <Category imgUrl="./assets/imgs/gift1.jpg" altText="filler" label="filler"></Category>
-        <Category imgUrl="./assets/imgs/gift1.jpg" altText="filler" label="filler"></Category>
+          className="z-10 mx-[calc(8px+10.5625vw)] mb-6 mt-12 grid grid-cols-4 gap-6 lg:mx-[calc(8px+10.5625vw)] grid-rows-1 lg:grid-cols-6">
+        <Category imgUrl="./assets/imgs/gift11.jpg" altText="lavender flowers" label="lavender flowers"></Category>
+        <Category imgUrl="./assets/imgs/gift9.jpg" altText="lavender clipart" label="lavender clipart"></Category>
+        <Category imgUrl="./assets/imgs/gift10.jpg" altText="lavender watercolor" label="lavender watercolor"></Category>
+        <Category imgUrl="./assets/imgs/gift12.jpg" altText="lavender illustration" label="lavender illustration"></Category>
+        <CategoryInvisible imgUrl="./assets/imgs/gift8.jpg" altText="watercolor lavender" label="watercolor lavender"></CategoryInvisible>
+        <CategoryInvisible imgUrl="./assets/imgs/gift7.jpg" altText="purple wildflower" label="purple wildflower"></CategoryInvisible>
     </div>   
   )
+}
+
+function CategoryInvisible({ imgUrl, altText, label }) {
+  return (
+    <div className="invisible group flex w-fit flex-col items-center lg:visible">
+        <img
+          className="h-[5.5rem] w-[5.5rem] rounded-full border border-solid border-[#dedede] object-cover lg:h-[7rem] lg:w-[7rem] transition duration-500 hover:scale-105 group-hover:drop-shadow-md"
+          src={imgUrl} alt={altText} />
+        <p className="flex pt-2 text-center text-[13px] font-semibold md:max-w-[10vw] lg:text-base group-hover:border-b-2 group-hover:border-text-secondary group-hover:text-hover-text">
+          {label}
+        </p>
+    </div>
+  );
 }
 
 
@@ -143,21 +156,20 @@ function Collection ({ title, numberOfItems, img1, alt1, img2, alt2, img3, alt3,
 export function Selections () {
   return (
      <div className="mx-[calc(8px+2.5625vw)] mt-4 grid grid-cols-2 gap-2 sm:grid-cols-3 sm:gap-4 lg:grid-cols-5">
-        <SelectionItemVisible imgUrl="./assets/imgs/flower5.jpg" alt="filler" label="shop our selections"></SelectionItemVisible>
-        <SelectionItemVisible imgUrl="./assets/imgs/flower5.jpg" alt="filler" label="shop our selections"></SelectionItemVisible>
-        <SelectionItemVisible imgUrl="./assets/imgs/flower5.jpg" alt="filler" label="shop our selections"></SelectionItemVisible>
-        <SelectionItemVisible imgUrl="./assets/imgs/flower5.jpg" alt="filler" label="shop our selections"></SelectionItemVisible>
-        <SelectionItemVisible imgUrl="./assets/imgs/flower5.jpg" alt="filler" label="shop our selections"></SelectionItemVisible>
-        <SelectionItemInvisible imgUrl="./assets/imgs/flower5.jpg" alt="filler" label="shop our selections"></SelectionItemInvisible>
-       
+        <SelectionItemVisible imgUrl="./assets/imgs/gifts17.jpg" alt="create spelled out in wooden blocks" label="Creating Change Together"></SelectionItemVisible>
+        <SelectionItemVisible imgUrl="./assets/imgs/gifts13.jpg" alt="leather breifcase" label="Gifts for Him"></SelectionItemVisible>
+        <SelectionItemVisible imgUrl="./assets/imgs/gifts16.jpg" alt="candles" label="Gifts for Her"></SelectionItemVisible>
+        <SelectionItemVisible imgUrl="./assets/imgs/gifts14.jpg" alt="lego blocks" label="Gifts for Kids"></SelectionItemVisible>
+        <SelectionItemVisible imgUrl="./assets/imgs/gifts15.jpg" alt="gold necklaces with various charm shapes" label="Gifts under $30"></SelectionItemVisible>
+        <SelectionItemInvisible imgUrl="./assets/imgs/gift2.jpg" alt="colorful balloons" label="Birthday Gifts"></SelectionItemInvisible>
      </div>
   )
 }
 function SelectionItemVisible ({imgUrl, alt, label}) {
   return (
-    <div className="h-50 overflow-hidden rounded-md border border-[#dedede]">
+    <div className="h-50 overflow-hidden rounded-md border border-[#dedede] ease-in-out duration-300 hover:shadow-md">
             <img className="h-[12rem] w-full object-cover" src={imgUrl} alt={alt}/>
-            <h5 className="py-4 text-center">{label}s</h5>
+            <h5 className="py-6 px-4 font-semibold text-center">{label}</h5>
           </div>
   )
 }
@@ -165,7 +177,7 @@ function SelectionItemInvisible ( {imgUrl, alt, label}) {
   return (
      <div className="h-50 overflow-hidden rounded-md border border-[#dedede] lg:invisible lg:absolute">
             <img className="h-[12rem] w-full object-cover" src={imgUrl} alt={alt} />
-            <h5 className="py-4 text-center">{label}</h5>
+            <h5 className="py-6 px-4 font-semibold text-center">{label}</h5>
           </div>
   )
 }
@@ -176,28 +188,26 @@ export function Blogs () {
   return (
     <div className="mx-[calc(8px+2.5625vw)] mt-4 grid gap-2 sm:flex sm:gap-4">
        <Blog
-       imgUrl="./assets/imgs/flower6.jpg" alt="Shopping Guides"
-       subtitle="Shopping Guides"
+       imgUrl="./assets/imgs/article1.jpg" alt="leather wallets"
+       subtitle="Gift Ideas"
        title="Martha Stewart's Father's Day Curated Collection"
        description="Call off your search! Just in time for Dad’s big day, the lifestyle
           icon shares her favorite foolproof present picks from small shops on
           Etsy.">
        </Blog>
        <Blog
-       imgUrl="./assets/imgs/flower6.jpg" alt="Shopping Guides"
-       subtitle="Shopping Guides"
-       title="Martha Stewart's Father's Day Curated Collection"
-       description="Call off your search! Just in time for Dad’s big day, the lifestyle
-          icon shares her favorite foolproof present picks from small shops on
-          Etsy.">
+       imgUrl="./assets/imgs/article2.jpg" alt="colorfully furnished room with vibrant paintings on the wall"
+       subtitle="Featured Shops"
+       title="Colorful Home Accents to Brighten Your Everyday From Object Lover"
+       description="Create a welcoming space full of vibrant side tables, playful planters, and handy trays 
+       from this ultra-imaginative, trans-founded 3D-printing shop.">
        </Blog>
        <Blog
-       imgUrl="./assets/imgs/flower6.jpg" alt="Shopping Guides"
+       imgUrl="./assets/imgs/article3.jpg" alt="a wreath made of pink and purple flowers and green leaves"
        subtitle="Shopping Guides"
-       title="Martha Stewart's Father's Day Curated Collection"
-       description="Call off your search! Just in time for Dad’s big day, the lifestyle
-          icon shares her favorite foolproof present picks from small shops on
-          Etsy.">
+       title="Summer Wreaths With Serious Curb-Appeal"
+       description="Give your front door an instant summer glow-up with these cheery summer wreaths full
+        of sunny pops of color.">
        </Blog>
     </div>
   )
@@ -205,8 +215,8 @@ export function Blogs () {
 
 function Blog ({ imgUrl, alt, subtitle, title, description}) {
   return (
-    <div className="flex h-40 overflow-hidden rounded-md border border-[#dedede] sm:h-auto sm:flex-col">
-            <img className="h-[40vh] w-[33vw] object-cover" src={imgUrl} alt={alt} />
+    <div className="flex h-40 w-1/3 overflow-hidden rounded-md border border-[#dedede] sm:h-auto sm:flex-col ease-in-out duration-300 hover:shadow-md">
+            <img className="h-[40vh] object-cover" src={imgUrl} alt={alt} />
             <div className="flex flex-col justify-center px-4">
               <p className="pt-3 text-left text-[13px] text-text-secondary">
                 {subtitle}
