@@ -16,7 +16,7 @@ function Category({ imgUrl, altText, label }) {
   return (
     <div className="group flex w-fit flex-col items-center">
         <img
-          className="h-[5.5rem] w-[5.5rem] rounded-full border border-solid border-[#dedede] object-cover lg:h-[7rem] lg:w-[7rem] transition duration-500 hover:scale-110 group-hover:drop-shadow-md"
+          className="h-[5.5rem] w-[5.5rem] rounded-full border border-solid border-[#dedede] object-cover lg:h-[7rem] lg:w-[7rem] transition duration-500 hover:scale-105 group-hover:drop-shadow-md"
           src={imgUrl} alt={altText} />
         <p className="flex pt-2 text-center text-[13px] font-semibold md:max-w-[10vw] lg:text-base group-hover:border-b-2 group-hover:border-text-secondary group-hover:text-hover-text">
           {label}
@@ -30,7 +30,7 @@ function Category({ imgUrl, altText, label }) {
 export function RecentlyViewedItems () {
   return (
     <div className="grid grid-cols-2 gap-1 sm:mx-[calc(8px+2.5625vw)] sm:grid-cols-4 sm:gap-3 lg:grid-cols-5">
-          <RecentlyViewedItemVisible imgUrl="./assets/imgs/flower2.jpg" price="1.50"></RecentlyViewedItemVisible>
+          <RecentlyViewedItemVisible imgUrl="./assets/imgs/flower2.jpg" price="2.50"></RecentlyViewedItemVisible>
           <RecentlyViewedItemVisible imgUrl="./assets/imgs/flower2.jpg" price="1.50"></RecentlyViewedItemVisible>
           <RecentlyViewedItemVisible imgUrl="./assets/imgs/flower2.jpg" price="1.50"></RecentlyViewedItemVisible>
           <RecentlyViewedItemVisible imgUrl="./assets/imgs/flower2.jpg" price="1.50"></RecentlyViewedItemVisible>
@@ -43,10 +43,14 @@ export function RecentlyViewedItems () {
     </div>
   );
 }
+
 function RecentlyViewedItemVisible ({ imgUrl, price}) {
   return (
-     <div className="relative">
-            <img className="relative z-0 h-[7.5rem] w-full object-cover sm:h-[10rem] sm:rounded-sm hover:drop-shadow-md"
+     <div className="group relative">
+            <div className="absolute top-2 right-2 z-10 px-2 py-[9px] bg-white rounded-full border border-solid border-[#dedede] invisible group-hover:visible">
+              <img className="h-4" src="./assets/icons/heart.png" alt="heart icon"/>
+            </div>
+            <img className="relative z-0 h-[7.5rem] w-full object-cover sm:h-[10rem] sm:rounded-sm hover:shadow-md"
               src={imgUrl} alt="pink flowers in white vase" />
             <div className="absolute bottom-0 z-10 mb-1 ml-1 w-fit rounded-lg border border-solid border-[#dedede] bg-white">
               <p className="w-fit px-2 py-0.5 text-[13px] font-bold">{price}</p>
@@ -57,7 +61,10 @@ function RecentlyViewedItemVisible ({ imgUrl, price}) {
 
 function RecentlyViewedItemInvisible ({ imgUrl, price }) {
   return (
-      <div className="invisible absolute lg:visible lg:relative">
+      <div className="group invisible absolute lg:visible lg:relative">
+           <div className="absolute top-2 right-2 z-10 px-2 py-[9px] bg-white rounded-full border border-solid border-[#dedede] invisible group-hover:visible">
+              <img className="h-4" src="./assets/icons/heart.png" alt="heart icon"/>
+            </div>
             <img className="relative z-0 h-[7.5rem] w-full object-cover sm:h-[10rem] sm:rounded-sm"
               src={imgUrl} alt="pink flowers in white vase" />
             <div className="absolute bottom-0 z-10 mb-1 ml-1 w-fit rounded-lg border border-solid border-[#dedede] bg-white">
@@ -114,19 +121,19 @@ function Collection ({ title, numberOfItems, img1, alt1, img2, alt2, img3, alt3,
   return (
     <div
             className="grid-rows-layout overflow-hidden h-auto mx-3 mb-5 grid grid-cols-2 gap-1 rounded-md border border-solid border-[#dedede] sm:mx-0 sm:w-full">
-            <div className="flex items-center">
+            <div className="group flex items-center">
               <h5 className="self-center whitespace-nowrap py-3 pl-4">
                 {title}
               </h5>
-              <img className="ml-1 h-4 w-4 self-center" src="./assets/icons/arrow-right.png" alt="arrow pointing to the right" />
+              <img className="ml-1 h-4 w-4 self-center ease-in-out duration-300 group-hover:translate-x-1" src="./assets/icons/arrow-right.png" alt="arrow pointing to the right" />
             </div>
             <p className="self-center justify-self-end pr-4 text-[13px] text-text-secondary">
               {numberOfItems}
             </p>
-            <img className="h-[25vh] lg:h-[18vh] w-full object-cover" src={img1} alt={alt1} />
-            <img className="h-[25vh] lg:h-[18vh] w-full object-cover" src={img2} alt={alt2} />
-            <img className="h-[25vh] lg:h-[18vh] w-full object-cover" src={img3} alt={alt3} />
-            <img className="h-[25vh] lg:h-[18vh] w-full object-cover" src={img4} alt={alt4} />
+            <img className="h-[25vh] lg:h-[18vh] w-full object-cover hover:opacity-60" src={img1} alt={alt1} />
+            <img className="h-[25vh] lg:h-[18vh] w-full object-cover hover:opacity-60" src={img2} alt={alt2} />
+            <img className="h-[25vh] lg:h-[18vh] w-full object-cover hover:opacity-60" src={img3} alt={alt3} />
+            <img className="h-[25vh] lg:h-[18vh] w-full object-cover hover:opacity-60" src={img4} alt={alt4} />
     </div>
   );
 }

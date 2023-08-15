@@ -16,6 +16,11 @@ export default {
       lg: "2rem",
       full: "9999px",
     },
+    boxShadow: {
+      sm: "0px 0px 10px 2px rgba(57, 65, 77, 0.25)",
+      md: "0px 0px 16px 4px rgba(57, 65, 77, 0.25)",
+      lg: "0px 0px 20px 6px rgba(57, 65, 77, 0.25)",
+    },
     extend: {
       spacing: {
         0: "0",
