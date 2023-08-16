@@ -77,7 +77,7 @@ function RecentlyViewedItemInvisible ({ imgUrl, price }) {
 export function RecentlyViewedCategories () {
   return (
     <div
-          className="z-10 mx-[calc(8px+10.5625vw)] mb-6 mt-12 grid grid-cols-4 gap-6 lg:mx-[calc(8px+10.5625vw)] grid-rows-1 lg:grid-cols-6">
+          className="justify-items-center z-10 mx-[calc(8px+10.5625vw)] mb-6 mt-12 grid grid-cols-4 gap-6 lg:mx-[calc(8px+10.5625vw)] grid-rows-1 lg:grid-cols-6">
         <Category imgUrl="./assets/imgs/gift11.jpg" altText="lavender flowers" label="lavender flowers"></Category>
         <Category imgUrl="./assets/imgs/gift9.jpg" altText="lavender clipart" label="lavender clipart"></Category>
         <Category imgUrl="./assets/imgs/gift10.jpg" altText="lavender watercolor" label="lavender watercolor"></Category>
@@ -90,7 +90,7 @@ export function RecentlyViewedCategories () {
 
 function CategoryInvisible({ imgUrl, altText, label }) {
   return (
-    <div className="invisible group flex w-fit flex-col items-center lg:visible">
+    <div className="invisible absolute group flex w-fit flex-col items-center lg:visible lg:relative">
         <img
           className="h-[5.5rem] w-[5.5rem] rounded-full border border-solid border-[#dedede] object-cover lg:h-[7rem] lg:w-[7rem] transition duration-500 hover:scale-105 group-hover:drop-shadow-md"
           src={imgUrl} alt={altText} />
@@ -107,24 +107,24 @@ export function Collections () {
  return (
   <div className="sm:mx-[calc(8px+2.5625vw)] sm:grid sm:grid-cols-2 sm:gap-4 lg:grid-cols-4">
       <Collection
-        title="Digital Stamps" numberOfItems="27 items"
-        img1="./assets/imgs/flower3.jpg" img2="./assets/imgs/flower3.jpg" img3="./assets/imgs/flower3.jpg" img4="./assets/imgs/flower3.jpg"
-        alt1="filler" alt2="filler" alt3="filler" alt4="filler">
+        title="Productivity" numberOfItems="27 items"
+        img1="./assets/imgs/label2.jpg" img2="./assets/imgs/digital5.jpg" img3="./assets/imgs/digital1.jpg" img4="./assets/imgs/digital2.jpg"
+        alt1="hands holding ipad" alt2="'do something great' sign" alt3="ipad and coffee on a white desk" alt4="phone with facebook open">
       </Collection> 
       <Collection
-        title="Digital Stamps" numberOfItems="27 items"
-        img1="./assets/imgs/flower3.jpg" img2="./assets/imgs/flower3.jpg" img3="./assets/imgs/flower3.jpg" img4="./assets/imgs/flower3.jpg"
-        alt1="filler" alt2="filler" alt3="filler" alt4="filler">
+        title="Lavender" numberOfItems="12 items"
+        img1="./assets/imgs/gift12.jpg" img2="./assets/imgs/gift11.jpg" img3="./assets/imgs/gift10.jpg" img4="./assets/imgs/gift9.jpg"
+        alt1="lavender, notebook, and coffee on a white table" alt2="hand holding a bunch of lavender" alt3="various pottery bowls" alt4="colorful swirls">
+      </Collection>  
+      <Collection
+        title="Containers" numberOfItems="13 items"
+        img1="./assets/imgs/label3.jpg" img2="./assets/imgs/label1.jpg" img3="./assets/imgs/digital8.jpg" img4="./assets/imgs/digital7.jpg"
+        alt1="small glass stopper jars" alt2="clear plastic food containers" alt3="small drawers" alt4="mini spray bottles">
       </Collection>  
       <Collection
         title="Digital Stamps" numberOfItems="27 items"
-        img1="./assets/imgs/flower3.jpg" img2="./assets/imgs/flower3.jpg" img3="./assets/imgs/flower3.jpg" img4="./assets/imgs/flower3.jpg"
-        alt1="filler" alt2="filler" alt3="filler" alt4="filler">
-      </Collection>  
-      <Collection
-        title="Digital Stamps" numberOfItems="27 items"
-        img1="./assets/imgs/flower3.jpg" img2="./assets/imgs/flower3.jpg" img3="./assets/imgs/flower3.jpg" img4="./assets/imgs/flower3.jpg"
-        alt1="filler" alt2="filler" alt3="filler" alt4="filler">
+        img1="./assets/imgs/label4.jpg" img2="./assets/imgs/digital3.jpg" img3="./assets/imgs/digital6.jpg" img4="./assets/imgs/digital4.jpg"
+        alt1="compuer creen with landscape images displayed" alt2="lines of code" alt3="tablet and keyboard against yellow background" alt4="phone with colorful filter">
       </Collection>      
   </div> 
  );
