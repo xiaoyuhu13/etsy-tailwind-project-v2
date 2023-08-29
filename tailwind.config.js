@@ -50,6 +50,7 @@ export default {
         fathersday: "4rem 7rem 7rem 2rem",
         decor: "1fr 2.5fr 2.5fr 1fr",
         curated: "auto 6.5rem 6.5rem auto",
+        nav: "2fr 1fr",
       },
       gridTemplateColumns: {
         "fathers-day-sm": "1.5fr 1.5fr 2fr 1.5fr 1.5fr",
