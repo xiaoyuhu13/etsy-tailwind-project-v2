@@ -231,3 +231,99 @@ function Blog ({ imgUrl, alt, subtitle, title, description}) {
           </div>
   )
 }
+
+export function Farmhouse () {
+  return (
+    <div
+    class="mx-[calc(8px+2.5625vw)] grid grid-cols-2 grid-rows-decor gap-2 sm:grid-cols-4 sm:grid-rows-2 sm:gap-4 lg:h-[55vh] lg:grid-cols-6">
+    <div class="group relative lg:col-span-2 lg:row-span-2">
+       <div class=" absolute top-2 right-2 z-10 px-2 py-[9px] bg-white rounded-full border border-solid border-[#dedede] invisible group-hover:visible">
+        <img class="h-4" src="./assets/icons/heart.png" alt="heart icon"/>
+      </div>
+      <div class="absolute bottom-0 z-10 mb-1 ml-1 w-fit rounded-lg border border-solid border-[#dedede] bg-white">
+        <p class="w-fit px-2 py-0.5 text-[13px] font-bold">$1.50</p>
+      </div>
+      <img class="h-full w-full rounded-sm object-cover" src="./assets/imgs/digital1.jpg"
+        alt="hands holding ipad" />
+    </div>
+    <Decor imgUrl="./assets/imgs/digital1.jpg" alt="hands holding ipad"></Decor>
+    <div class="relative group sm:row-span-2 lg:col-span-2">
+      <div class=" absolute top-2 right-2 z-10 px-2 py-[9px] bg-white rounded-full border border-solid border-[#dedede] invisible group-hover:visible">
+        <img class="h-4" src="./assets/icons/heart.png" alt="heart icon"/>
+      </div>
+      <div class="absolute bottom-0 z-10 mb-1 ml-1 w-fit rounded-lg border border-solid border-[#dedede] bg-white">
+        <p class="w-fit px-2 py-0.5 text-[13px] font-bold">$1.50</p>
+      </div>
+      <img class="col-span-2 h-full w-full rounded-sm object-cover " src="./assets/imgs/digital1.jpg"
+        alt="hands holding ipad" />
+    </div>
+    <div class="group relative sm:row-span-2 lg:col-span-1 lg:row-span-1">
+      <div class=" absolute top-2 right-2 z-10 px-2 py-[9px] bg-white rounded-full border border-solid border-[#dedede] invisible group-hover:visible">
+        <img class="h-4" src="./assets/icons/heart.png" alt="heart icon"/>
+      </div>
+      <div class="absolute bottom-0 z-10 mb-1 ml-1 w-fit rounded-lg border border-solid border-[#dedede] bg-white">
+        <p class="w-fit px-2 py-0.5 text-[13px] font-bold">$1.50</p>
+      </div>
+      <img class="col-span-2 h-full w-full rounded-sm object-cover"
+        src="./assets/imgs/digital1.jpg" alt="hands holding ipad" />
+    </div>
+    <Decor imgUrl="./assets/imgs/digital1.jpg" alt="hands holding ipad"></Decor>
+    <Decor imgUrl="./assets/imgs/digital1.jpg" alt="hands holding ipad"></Decor>
+  </div> 
+  )
+}
+
+export function Boho () {
+  return (
+    <div
+    class="mx-[calc(8px+2.5625vw)] grid grid-cols-2 grid-rows-decor gap-2 sm:grid-cols-4 sm:grid-rows-2 sm:gap-4 lg:h-[55vh] lg:grid-cols-6">
+    <div class="group relative lg:col-span-2 lg:row-span-2">
+       <div class=" absolute top-2 right-2 z-10 px-2 py-[9px] bg-white rounded-full border border-solid border-[#dedede] invisible group-hover:visible">
+        <img class="h-4" src="./assets/icons/heart.png" alt="heart icon"/>
+      </div>
+      <div class="absolute bottom-0 z-10 mb-1 ml-1 w-fit rounded-lg border border-solid border-[#dedede] bg-white">
+        <p class="w-fit px-2 py-0.5 text-[13px] font-bold">$1.50</p>
+      </div>
+      <img class="h-full w-full rounded-sm object-cover" src="./assets/imgs/digital1.jpg"
+        alt="hands holding ipad" />
+    </div>
+    <Decor imgUrl="./assets/imgs/digital1.jpg" alt="hands holding ipad"></Decor>
+    <div class="relative group sm:row-span-2 lg:col-span-2">
+      <div class=" absolute top-2 right-2 z-10 px-2 py-[9px] bg-white rounded-full border border-solid border-[#dedede] invisible group-hover:visible">
+        <img class="h-4" src="./assets/icons/heart.png" alt="heart icon"/>
+      </div>
+      <div class="absolute bottom-0 z-10 mb-1 ml-1 w-fit rounded-lg border border-solid border-[#dedede] bg-white">
+        <p class="w-fit px-2 py-0.5 text-[13px] font-bold">$1.50</p>
+      </div>
+      <img class="col-span-2 h-full w-full rounded-sm object-cover " src="./assets/imgs/digital1.jpg"
+        alt="hands holding ipad" />
+    </div>
+    <div class="group relative sm:row-span-2 lg:col-span-1 lg:row-span-1">
+      <div class=" absolute top-2 right-2 z-10 px-2 py-[9px] bg-white rounded-full border border-solid border-[#dedede] invisible group-hover:visible">
+        <img class="h-4" src="./assets/icons/heart.png" alt="heart icon"/>
+      </div>
+      <div class="absolute bottom-0 z-10 mb-1 ml-1 w-fit rounded-lg border border-solid border-[#dedede] bg-white">
+        <p class="w-fit px-2 py-0.5 text-[13px] font-bold">$1.50</p>
+      </div>
+      <img class="col-span-2 h-full w-full rounded-sm object-cover"
+        src="./assets/imgs/digital1.jpg" alt="hands holding ipad" />
+    </div>
+    <Decor imgUrl="./assets/imgs/digital1.jpg" alt="hands holding ipad"></Decor>
+    <Decor imgUrl="./assets/imgs/digital2.jpg" alt="hands holding ipad"></Decor>
+  </div> 
+  )
+}
+
+function Decor ({imgUrl, alt}) {
+  return (
+    <div className="group relative">
+    <div className=" absolute top-2 right-2 z-10 px-2 py-[9px] bg-white rounded-full border border-solid border-[#dedede] invisible group-hover:visible">
+      <img className="h-4" src="./assets/icons/heart.png" alt="heart icon"/>
+    </div>
+    <div className="absolute bottom-0 z-10 mb-1 ml-1 w-fit rounded-lg border border-solid border-[#dedede] bg-white">
+      <p className="w-fit px-2 py-0.5 text-[13px] font-bold">$1.50</p>
+    </div>
+    <img className="h-full w-full rounded-sm object-cover" src={imgUrl} alt={alt} />
+  </div>
+  )
+}

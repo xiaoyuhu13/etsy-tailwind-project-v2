@@ -48,7 +48,7 @@ export default {
         // Complex site-specific row configuration
         collections: "2fr 3fr 3fr",
         fathersday: "4rem 7rem 7rem 2rem",
-        decor: "1fr 2.5fr 2.5fr 1fr",
+        decor: "1fr 1fr 1fr",
         curated: "auto 6.5rem 6.5rem auto",
         nav: "2fr 1fr",
       },
