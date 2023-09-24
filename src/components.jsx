@@ -232,43 +232,18 @@ function Blog ({ imgUrl, alt, subtitle, title, description}) {
   )
 }
 
+
+//Decor section components
 export function Farmhouse () {
   return (
     <div
-    class="mx-[calc(8px+2.5625vw)] grid grid-cols-2 grid-rows-decor gap-2 sm:grid-cols-4 sm:grid-rows-2 sm:gap-4 lg:h-[55vh] lg:grid-cols-6">
-    <div class="group relative lg:col-span-2 lg:row-span-2">
-       <div class=" absolute top-2 right-2 z-10 px-2 py-[9px] bg-white rounded-full border border-solid border-[#dedede] invisible group-hover:visible">
-        <img class="h-4" src="./assets/icons/heart.png" alt="heart icon"/>
-      </div>
-      <div class="absolute bottom-0 z-10 mb-1 ml-1 w-fit rounded-lg border border-solid border-[#dedede] bg-white">
-        <p class="w-fit px-2 py-0.5 text-[13px] font-bold">$1.50</p>
-      </div>
-      <img class="h-full w-full rounded-sm object-cover" src="./assets/imgs/digital1.jpg"
-        alt="hands holding ipad" />
-    </div>
-    <Decor imgUrl="./assets/imgs/digital1.jpg" alt="hands holding ipad"></Decor>
-    <div class="relative group sm:row-span-2 lg:col-span-2">
-      <div class=" absolute top-2 right-2 z-10 px-2 py-[9px] bg-white rounded-full border border-solid border-[#dedede] invisible group-hover:visible">
-        <img class="h-4" src="./assets/icons/heart.png" alt="heart icon"/>
-      </div>
-      <div class="absolute bottom-0 z-10 mb-1 ml-1 w-fit rounded-lg border border-solid border-[#dedede] bg-white">
-        <p class="w-fit px-2 py-0.5 text-[13px] font-bold">$1.50</p>
-      </div>
-      <img class="col-span-2 h-full w-full rounded-sm object-cover " src="./assets/imgs/digital1.jpg"
-        alt="hands holding ipad" />
-    </div>
-    <div class="group relative sm:row-span-2 lg:col-span-1 lg:row-span-1">
-      <div class=" absolute top-2 right-2 z-10 px-2 py-[9px] bg-white rounded-full border border-solid border-[#dedede] invisible group-hover:visible">
-        <img class="h-4" src="./assets/icons/heart.png" alt="heart icon"/>
-      </div>
-      <div class="absolute bottom-0 z-10 mb-1 ml-1 w-fit rounded-lg border border-solid border-[#dedede] bg-white">
-        <p class="w-fit px-2 py-0.5 text-[13px] font-bold">$1.50</p>
-      </div>
-      <img class="col-span-2 h-full w-full rounded-sm object-cover"
-        src="./assets/imgs/digital1.jpg" alt="hands holding ipad" />
-    </div>
-    <Decor imgUrl="./assets/imgs/digital1.jpg" alt="hands holding ipad"></Decor>
-    <Decor imgUrl="./assets/imgs/digital1.jpg" alt="hands holding ipad"></Decor>
+    className="mx-[calc(8px+2.5625vw)] grid grid-cols-2 grid-rows-decor gap-2 sm:grid-cols-4 sm:grid-rows-2 sm:gap-4 lg:h-[55vh] lg:grid-cols-6">
+    <Decor1 imgUrl="./assets/imgs/modern-farmhouse1.jpg" alt="hands holding ipad"></Decor1>
+    <Decor imgUrl="./assets/imgs/modern-farmhouse2.jpg" alt="hands holding ipad"></Decor>
+    <Decor2 imgUrl="./assets/imgs/modern-farmhouse3.jpg" alt="hands holding ipad"></Decor2>
+    <Decor3 imgUrl="./assets/imgs/modern-farmhouse4.jpg" alt="hands holding ipad"></Decor3>
+    <Decor imgUrl="./assets/imgs/modern-farmhouse5.jpg" alt="hands holding ipad"></Decor>
+    <Decor imgUrl="./assets/imgs/modern-farmhouse6.jpg" alt="hands holding ipad"></Decor>
   </div> 
   )
 }
@@ -276,43 +251,46 @@ export function Farmhouse () {
 export function Boho () {
   return (
     <div
-    class="mx-[calc(8px+2.5625vw)] grid grid-cols-2 grid-rows-decor gap-2 sm:grid-cols-4 sm:grid-rows-2 sm:gap-4 lg:h-[55vh] lg:grid-cols-6">
-    <div class="group relative lg:col-span-2 lg:row-span-2">
-       <div class=" absolute top-2 right-2 z-10 px-2 py-[9px] bg-white rounded-full border border-solid border-[#dedede] invisible group-hover:visible">
-        <img class="h-4" src="./assets/icons/heart.png" alt="heart icon"/>
-      </div>
-      <div class="absolute bottom-0 z-10 mb-1 ml-1 w-fit rounded-lg border border-solid border-[#dedede] bg-white">
-        <p class="w-fit px-2 py-0.5 text-[13px] font-bold">$1.50</p>
-      </div>
-      <img class="h-full w-full rounded-sm object-cover" src="./assets/imgs/digital1.jpg"
-        alt="hands holding ipad" />
-    </div>
-    <Decor imgUrl="./assets/imgs/digital1.jpg" alt="hands holding ipad"></Decor>
-    <div class="relative group sm:row-span-2 lg:col-span-2">
-      <div class=" absolute top-2 right-2 z-10 px-2 py-[9px] bg-white rounded-full border border-solid border-[#dedede] invisible group-hover:visible">
-        <img class="h-4" src="./assets/icons/heart.png" alt="heart icon"/>
-      </div>
-      <div class="absolute bottom-0 z-10 mb-1 ml-1 w-fit rounded-lg border border-solid border-[#dedede] bg-white">
-        <p class="w-fit px-2 py-0.5 text-[13px] font-bold">$1.50</p>
-      </div>
-      <img class="col-span-2 h-full w-full rounded-sm object-cover " src="./assets/imgs/digital1.jpg"
-        alt="hands holding ipad" />
-    </div>
-    <div class="group relative sm:row-span-2 lg:col-span-1 lg:row-span-1">
-      <div class=" absolute top-2 right-2 z-10 px-2 py-[9px] bg-white rounded-full border border-solid border-[#dedede] invisible group-hover:visible">
-        <img class="h-4" src="./assets/icons/heart.png" alt="heart icon"/>
-      </div>
-      <div class="absolute bottom-0 z-10 mb-1 ml-1 w-fit rounded-lg border border-solid border-[#dedede] bg-white">
-        <p class="w-fit px-2 py-0.5 text-[13px] font-bold">$1.50</p>
-      </div>
-      <img class="col-span-2 h-full w-full rounded-sm object-cover"
-        src="./assets/imgs/digital1.jpg" alt="hands holding ipad" />
-    </div>
-    <Decor imgUrl="./assets/imgs/digital1.jpg" alt="hands holding ipad"></Decor>
-    <Decor imgUrl="./assets/imgs/digital2.jpg" alt="hands holding ipad"></Decor>
+    className="mx-[calc(8px+2.5625vw)] grid grid-cols-2 grid-rows-decor gap-2 sm:grid-cols-4 sm:grid-rows-2 sm:gap-4 lg:h-[55vh] lg:grid-cols-6">
+    <Decor1 imgUrl="./assets/imgs/boho-decor1.jpg" alt="hands holding ipad"></Decor1>
+    <Decor imgUrl="./assets/imgs/boho-decor2.jpg" alt="hands holding ipad"></Decor>
+    <Decor2 imgUrl="./assets/imgs/boho-decor3.jpg" alt="hands holding ipad"></Decor2>
+    <Decor3 imgUrl="./assets/imgs/boho-decor4.jpg" alt="hands holding ipad"></Decor3>
+    <Decor imgUrl="./assets/imgs/boho-decor5.jpg" alt="hands holding ipad"></Decor>
+    <Decor imgUrl="./assets/imgs/boho-decor6.jpg" alt="hands holding ipad"></Decor>
   </div> 
   )
 }
+
+export function Eclectic () {
+  return (
+    <div
+    className="mx-[calc(8px+2.5625vw)] grid grid-cols-2 grid-rows-decor gap-2 sm:grid-cols-4 sm:grid-rows-2 sm:gap-4 lg:h-[55vh] lg:grid-cols-6">
+    <Decor1 imgUrl="./assets/imgs/eclectic-decor1.jpg" alt="hands holding ipad"></Decor1>
+    <Decor imgUrl="./assets/imgs/eclectic-decor2.jpg" alt="hands holding ipad"></Decor>
+    <Decor2 imgUrl="./assets/imgs/eclectic-decor3.jpg" alt="hands holding ipad"></Decor2>
+    <Decor3 imgUrl="./assets/imgs/eclectic-decor4.jpg" alt="hands holding ipad"></Decor3>
+    <Decor imgUrl="./assets/imgs/eclectic-decor5.jpg" alt="hands holding ipad"></Decor>
+    <Decor imgUrl="./assets/imgs/eclectic-decor6.jpg" alt="hands holding ipad"></Decor>
+  </div> 
+  )
+}
+
+
+export function Minimalist () {
+  return (
+    <div
+    className="mx-[calc(8px+2.5625vw)] grid grid-cols-2 grid-rows-decor gap-2 sm:grid-cols-4 sm:grid-rows-2 sm:gap-4 lg:h-[55vh] lg:grid-cols-6">
+    <Decor1 imgUrl="./assets/imgs/minimalist-decor1.jpg" alt="hands holding ipad"></Decor1>
+    <Decor imgUrl="./assets/imgs/minimalist-decor2.jpg" alt="hands holding ipad"></Decor>
+    <Decor2 imgUrl="./assets/imgs/minimalist-decor3.jpg" alt="hands holding ipad"></Decor2>
+    <Decor3 imgUrl="./assets/imgs/minimalist-decor4.jpg" alt="hands holding ipad"></Decor3>
+    <Decor imgUrl="./assets/imgs/minimalist-decor5.jpg" alt="hands holding ipad"></Decor>
+    <Decor imgUrl="./assets/imgs/minimalist-decor6.jpg" alt="hands holding ipad"></Decor>
+  </div> 
+  )
+}
+
 
 function Decor ({imgUrl, alt}) {
   return (
@@ -327,3 +305,53 @@ function Decor ({imgUrl, alt}) {
   </div>
   )
 }
+
+//the first unique decor that changes based on screen size
+function Decor1 ({imgUrl, alt}) {
+  return (
+    <div className="group relative lg:col-span-2 lg:row-span-2">
+       <div className=" absolute top-2 right-2 z-10 px-2 py-[9px] bg-white rounded-full border border-solid border-[#dedede] invisible group-hover:visible">
+        <img className="h-4" src="./assets/icons/heart.png" alt="heart icon"/>
+      </div>
+      <div className="absolute bottom-0 z-10 mb-1 ml-1 w-fit rounded-lg border border-solid border-[#dedede] bg-white">
+        <p className="w-fit px-2 py-0.5 text-[13px] font-bold">$1.50</p>
+      </div>
+      <img className="h-full w-full rounded-sm object-cover" src={imgUrl}
+        alt={alt} />
+    </div>
+  )
+}
+
+//the second unique decor that changes based on screen size
+function Decor2 ({imgUrl, alt}) {
+  return(
+    <div className="relative group sm:row-span-2 lg:col-span-2">
+      <div className=" absolute top-2 right-2 z-10 px-2 py-[9px] bg-white rounded-full border border-solid border-[#dedede] invisible group-hover:visible">
+        <img className="h-4" src="./assets/icons/heart.png" alt="heart icon"/>
+      </div>
+      <div className="absolute bottom-0 z-10 mb-1 ml-1 w-fit rounded-lg border border-solid border-[#dedede] bg-white">
+        <p className="w-fit px-2 py-0.5 text-[13px] font-bold">$1.50</p>
+      </div>
+      <img className="col-span-2 h-full w-full rounded-sm object-cover " src={imgUrl}
+        alt={alt} />
+    </div>
+  )
+
+}
+
+//the third unique decor that changes based on screen size
+function Decor3 ({imgUrl, alt}) {
+  return(
+    <div className="group relative sm:row-span-2 lg:col-span-1 lg:row-span-1">
+      <div className=" absolute top-2 right-2 z-10 px-2 py-[9px] bg-white rounded-full border border-solid border-[#dedede] invisible group-hover:visible">
+        <img className="h-4" src="./assets/icons/heart.png" alt="heart icon"/>
+      </div>
+      <div className="absolute bottom-0 z-10 mb-1 ml-1 w-fit rounded-lg border border-solid border-[#dedede] bg-white">
+        <p className="w-fit px-2 py-0.5 text-[13px] font-bold">$1.50</p>
+      </div>
+      <img className="col-span-2 h-full w-full rounded-sm object-cover"
+        src={imgUrl} alt={alt} />
+    </div>
+  )
+}
+

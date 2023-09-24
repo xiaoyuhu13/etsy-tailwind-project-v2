@@ -1,16 +1,20 @@
 import React, { useState } from "react";
-import {Farmhouse, Boho} from './components.jsx';
+import {Farmhouse, Boho, Eclectic, Minimalist} from './components.jsx';
 
 
 const Decor = () => {
   const [imageClicked, setImageClicked] = useState({
     farmhouse: true,
     boho: false,
+    eclectic: false,
+    minimalist: false,
   });
   const onClickHandler = (order) => {
     const resetImages = {
       farmhouse: false,
       boho: false,
+      eclectic: false,
+      minimalist: false,
     };
     setImageClicked({
       ...resetImages,
@@ -33,13 +37,13 @@ const Decor = () => {
            <div className="h-0.5 w-1 bg-[#dedede] ease-in-out duration-300 group-hover:bg-hover-text group-hover:w-full"></div>
           </div>
           <div className="invisible absolute group flex flex-col items-center sm:visible sm:relative">
-            <button className="mb-2 w-full text-center text-xl font-light text-text-secondary group-hover:text-black">
+            <button onClick={() => onClickHandler("eclectic")} className="mb-2 w-full text-center text-xl font-light text-text-secondary group-hover:text-black">
               Eclectic Decor
             </button>
            <div className="h-0.5 w-1 bg-[#dedede] ease-in-out duration-300 group-hover:bg-hover-text group-hover:w-full"></div>
           </div>
           <div className="invisible absolute group flex flex-col items-center lg:visible lg:relative">
-            <button className="mb-2 w-full text-center text-xl font-light text-text-secondary group-hover:text-black">
+            <button onClick={() => onClickHandler("minimalist")} className="mb-2 w-full text-center text-xl font-light text-text-secondary group-hover:text-black">
               Minimalist
             </button>
            <div className="h-0.5 w-1 bg-[#dedede] ease-in-out duration-300 group-hover:bg-hover-text group-hover:w-full"></div>
@@ -49,6 +53,8 @@ const Decor = () => {
       <div className="image">
         {imageClicked.farmhouse && <Farmhouse></Farmhouse>}
         {imageClicked.boho && <Boho></Boho>}
+        {imageClicked.eclectic && <Eclectic></Eclectic>}
+        {imageClicked.minimalist && <Minimalist></Minimalist>}
       </div>
     </div>
   );

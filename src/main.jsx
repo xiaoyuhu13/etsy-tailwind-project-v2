@@ -34,14 +34,6 @@ const blogsRoot = createRoot(blogsDomNode);
 blogsRoot.render(<Blogs />);
 
 //Decor
-// const farmhouseDomNode = document.getElementById('farmhouse');
-// const farmhouseRoot = createRoot(farmhouseDomNode);
-// farmhouseRoot.render(<Farmhouse />);
-
-// const bohoDomNode = document.getElementById('boho');
-// const bohoRoot = createRoot(bohoDomNode);
-// bohoRoot.render(<Boho />);
-
 const decorDomNode = document.getElementById('decor');
 const decorRoot = createRoot(decorDomNode);
 decorRoot.render(<Decor />);
