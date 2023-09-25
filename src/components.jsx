@@ -355,3 +355,4 @@ function Decor3 ({imgUrl, alt}) {
   )
 }
 
+
