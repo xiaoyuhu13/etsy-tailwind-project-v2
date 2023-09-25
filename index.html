@@ -280,7 +280,38 @@
           </h3>
           <img class="ml-1 mt-1 h-4 w-4 ease-in-out duration-300 group-hover:translate-x-1" src="./assets/icons/arrow-right.png" alt="arrow pointing to the right" />
       </div>
-        <div id="decor"></div>
+        <div class="mb-4 mx-[calc(8px+2.5625vw)] border-b border-gray-200 dark:border-gray-700">
+          <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="myTab" data-tabs-toggle="#myTabContent" role="tablist">
+              <li class="mr-2" role="presentation">
+                  <button class="inline-block p-4 border-b-2 rounded-t-lg" id="farmhouse-tab" data-tabs-target="#farmhouse" type="button" role="tab" aria-controls="farmhouse" aria-selected="false">Farmhouse</button>
+              </li>
+              <li class="mr-2" role="presentation">
+                  <button class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="boho-tab" data-tabs-target="#boho" type="button" role="tab" aria-controls="boho" aria-selected="false">Boho</button>
+              </li>
+              <li class="mr-2" role="presentation">
+                  <button class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="eclectic-tab" data-tabs-target="#eclectic" type="button" role="tab" aria-controls="eclectic" aria-selected="false">Eclectic</button>
+              </li>
+              <li role="presentation">
+                  <button class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="minimalist-tab" data-tabs-target="#minimalist" type="button" role="tab" aria-controls="minimalist" aria-selected="false">Minimalist</button>
+              </li>
+          </ul>
+      </div>
+      <div id="myTabContent">
+          <div class="hidden" id="farmhouse" role="tabpanel" aria-labelledby="farmhouse-tab">
+              <div id="farmhouse"></div>
+          </div>
+          <div class="hidden" id="boho" role="tabpanel" aria-labelledby="boho-tab">
+            <div id="boho"></div>
+          </div>
+          <div class="hidden" id="eclectic" role="tabpanel" aria-labelledby="eclectic-tab">
+            <div id="eclectic"></div>
+          </div>
+          <div class="hidden" id="minimalist" role="tabpanel" aria-labelledby="minimalist-tab">
+            <div id="minimalist"></div>
+          </div>
+      </div>  
+      
+
       
       
       <!-- Curated Collection-->

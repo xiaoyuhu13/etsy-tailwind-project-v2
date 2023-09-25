@@ -1,7 +1,6 @@
 import React from 'react'
 import { createRoot } from 'react-dom/client'
-import { Gifts, RecentlyViewedCategories, RecentlyViewedItems, Collections, Selections, Blogs, Farmhouse, Boho } from './components.jsx'
-import Decor from './decor.jsx'
+import { Gifts, RecentlyViewedCategories, RecentlyViewedItems, Collections, Selections, Blogs, Farmhouse, Boho, Eclectic, Minimalist } from './components.jsx'
 import './index.css'
 
 //Gifts
@@ -34,6 +33,18 @@ const blogsRoot = createRoot(blogsDomNode);
 blogsRoot.render(<Blogs />);
 
 //Decor
-const decorDomNode = document.getElementById('decor');
-const decorRoot = createRoot(decorDomNode);
-decorRoot.render(<Decor />);
+const farmhouseDomNode = document.getElementById('farmhouse');
+const farmhouseRoot = createRoot(farmhouseDomNode);
+farmhouseRoot.render(<Farmhouse />);
+
+const bohoDomNode = document.getElementById('boho');
+const bohoRoot = createRoot(bohoDomNode);
+bohoRoot.render(<Boho />);
+
+const eclecticDomNode = document.getElementById('eclectic');
+const eclecticRoot = createRoot(eclecticDomNode);
+eclecticRoot.render(<Eclectic />);
+
+const minimalistDomNode = document.getElementById('minimalist');
+const minimalistRoot = createRoot(minimalistDomNode);
+minimalistRoot.render(<Minimalist />);
